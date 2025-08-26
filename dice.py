@@ -4,4 +4,4 @@ class Dice:
     def __init__(self):
         pass
     def roll_dice(self):
-        pass
+        return random.randint(1,6)
