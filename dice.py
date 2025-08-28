@@ -5,19 +5,6 @@ class Dice:
         pass
     def roll_dice(self):
         return random.randint(1,6)
-    def pinta(self, int):
-        match (int):
-            case 1:
-                return "As"
-            case 2:
-                return "Tonto"
-            case 3:
-                return "Tren"
-            case 4:
-                return "Cuadra"
-            case 5:
-                return "Quina"
-            case 6:
-                return "Sexto"
-            case _:
-                return None
+    def pinta(self, value: int) -> str | None:
+        pintas = {1: "As", 2: "Tonto", 3: "Tren", 4: "Cuadra", 5: "Quina", 6: "Sexto",}
+        return pintas.get(value)
