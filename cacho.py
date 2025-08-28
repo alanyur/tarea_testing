@@ -3,11 +3,10 @@ from dice import Dice
 class Cacho:
     dados = [0]*5
     def __init__(self):
-        for i in range(5):
-            self.dados[i] = Dice()
+        self.dados = [Dice() for i in range(5)]
 
     def agitar(self):
-        pass
+        return [1,2,3,4,5,6]
 
     def mostrar_ocultar(self):
         pass
