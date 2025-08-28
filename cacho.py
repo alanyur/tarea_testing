@@ -6,7 +6,8 @@ class Cacho:
         self.dados = [Dice() for i in range(5)]
 
     def agitar(self):
-        return [1,2,3,4,5,6]
+        resultado = [self.dados[i].roll_dice() for i in range(5)]
+        return resultado
 
     def mostrar_ocultar(self):
         pass

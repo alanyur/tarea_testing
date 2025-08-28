@@ -13,5 +13,6 @@ def test_agitar_dados():
     # Confirmar si al agitar el cacho, los 5 dados dan valores entre 1 a 6
     cacho = Cacho()
     numeros = cacho.agitar()
+    print('\n', "resultado = ", numeros, end = '\n')
     for numero in numeros:
         assert numero in [1,2,3,4,5,6]
