@@ -16,3 +16,13 @@ def test_agitar_dados():
     print('\n', "resultado = ", numeros, end = '\n')
     for numero in numeros:
         assert numero in [1,2,3,4,5,6]
+
+def test_mostrar_dados():
+    # Confirmar si la función mostrar() nos devuelve los dados de todos los jugadores como listas separadas
+    cachos = [Cacho() for i in range(3)]
+    for i in range(3):
+        cachos[i].agitar()
+        print('\n', "resultado = ", cachos[i].mostrar(), end='\n')
+        assert len(cachos[i].mostrar()) == 6
+        for numero in cachos[i].mostrar():
+            assert numero in [1,2,3,4,5,6]

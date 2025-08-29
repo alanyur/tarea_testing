@@ -9,5 +9,5 @@ class Cacho:
         resultado = [self.dados[i].roll_dice() for i in range(5)]
         return resultado
 
-    def mostrar_ocultar(self):
+    def mostrar(self):
         pass
