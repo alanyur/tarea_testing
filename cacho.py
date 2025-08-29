@@ -10,4 +10,5 @@ class Cacho:
         return resultado
 
     def mostrar(self):
-        pass
+        resultado = [self.dados[i].get_value() for i in range(len(self.dados))]
+        return resultado
