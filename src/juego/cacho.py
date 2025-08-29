@@ -1,12 +1,14 @@
 from src.juego.dice import Dice
 class Cacho:
-    
+    dados = [0]*5
     def __init__(self):
-        pass
+        self.dados = [Dice() for i in range(5)]
 
     def agitar(self):
-        pass
+        resultado = [self.dados[i].roll_dice() for i in range(5)]
+        return resultado
 
     def mostrar(self):
-        pass
+        resultado = [self.dados[i].get_value() for i in range(len(self.dados))]
+        return resultado
 
