@@ -20,3 +20,9 @@ class arbitro:
         else:
             return False ###dudaste mal
 
+
+    def calzar(self,cantidad,pinta,jugadores):
+        pass
+
+
+
