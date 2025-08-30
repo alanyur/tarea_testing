@@ -20,6 +20,7 @@ def test_contar_dados_por_pinta_ronda_especial():
     #jugadores=[Cacho(dados=[1,1,5,5,3]),Cacho(dados=[2,2,4,6,1]),Cacho(dados=[3,3,3,4,4]),Cacho(dados=[1,2,3,4,5])]
     jugadores=[Mock(dados=[1,1,5,5,3]),Mock(dados=[2,2,4,6,1]),Mock(dados=[3,3,3,4,4]),Mock(dados=[1,2,3,4,5])]
     contador=Contador()
+    contador.ronda_especial=True
     resultado=contador.cuenta(jugadores)
     assert resultado[0] == 4
     assert resultado[1] == 3
