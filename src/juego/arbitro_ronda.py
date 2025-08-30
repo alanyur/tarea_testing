@@ -47,3 +47,6 @@ class arbitro:
             jugadores[k-1].dados.pop()
         elif string=="dudar" and boolean==False:
             jugadores[k].dados.pop()
+
+    def validar_calzar(self,cantidad,jugadores,k):
+        pass
