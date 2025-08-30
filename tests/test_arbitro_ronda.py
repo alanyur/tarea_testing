@@ -30,3 +30,11 @@ def test_calzar(mocker):
 
     # verificamos que cuenta fue llamado con los jugadores
     mock_cuenta.assert_called_once_with(jugadores)
+
+def test_pasar_dado():
+    jugadores = [cacho.Cacho() for _ in range(4)]
+    a=arbitro()
+    a.jugadores=jugadores
+    a.pasar_dado("calzar",False,jugadores,0)
+    c_dados = len(jugadores[0].dados)
+    assert c_dados is  4

@@ -36,3 +36,7 @@ class arbitro:
             return True ###calzaste bien
         else:
             return False ###calzaste mal
+
+
+    def pasar_dado(self,string,boolean,jugadores,k):
+        pass
