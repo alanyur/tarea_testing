@@ -14,5 +14,6 @@ class gestor:
         print(f"Inicia jugador {self.turno_actual + 1}")
 
     def turno(self):
-        pass
+        self.turno_actual = (self.turno_actual + 1) % len(self.jugadores)
+        print(f"Turno del jugador {self.turno_actual + 1}")
 
