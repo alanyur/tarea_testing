@@ -18,4 +18,10 @@ class gestor:
         print(f"Turno del jugador {self.turno_actual + 1}")
 
     def un_dado(self):
-        pass
+        k=len(self.jugadores)
+        for i in range (k):
+            if len(self.jugadores[self.turno_actual].dados)==1:
+                print("te queda un dado")
+                return True
+            else:
+                return False
