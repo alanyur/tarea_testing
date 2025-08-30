@@ -19,7 +19,7 @@ def test_dudar(mocker):
 def test_calzar(mocker):
     jugadores = [cacho.Cacho() for _ in range(2)]
     mock_cuenta = mocker.patch(
-        "src.juego.contador.contador.cuenta",
+        "src.juego.contador_pintas.contador.cuenta",
         return_value=[3, 2, 1, 0, 0, 0]  # hay 3 "as", 2 "tonto"
     )
     a=arbitro()
