@@ -8,4 +8,5 @@ class gestor:
         self.jugadores = [cacho.Cacho() for i in range(cantidad_jugadores)]
         
 
-    
+    def iniciar_juego(self):
+        pass
