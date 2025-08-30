@@ -39,4 +39,11 @@ class arbitro:
 
 
     def pasar_dado(self,string,boolean,jugadores,k):
-        pass
+        if string=="calzar" and boolean==True:
+            jugadores[k].dados.pop()
+        elif string=="calzar" and boolean==False:
+            jugadores[k].dados.pop()
+        elif string=="dudar" and boolean==True:
+            jugadores[k-1].dados.pop()
+        elif string=="dudar" and boolean==False:
+            jugadores[k].dados.pop()

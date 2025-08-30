@@ -37,4 +37,4 @@ def test_pasar_dado():
     a.jugadores=jugadores
     a.pasar_dado("calzar",False,jugadores,0)
     c_dados = len(jugadores[0].dados)
-    assert c_dados is  4
+    assert c_dados ==  4
