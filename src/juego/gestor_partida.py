@@ -13,5 +13,6 @@ class gestor:
         self.turno_actual = random.randint(0, len(self.jugadores) - 1)
         print(f"Inicia jugador {self.turno_actual + 1}")
 
-   
-  
+    def turno(self):
+        pass
+

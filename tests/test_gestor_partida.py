@@ -13,3 +13,11 @@ def test_iniciar_juego(mocker):
     g = gestor()
     # forzamos random.randint a devolver 1
     assert g.turno_actual == 1
+
+
+def test_turno(mocker):
+    mocker.patch("builtins.input", return_value="2")
+    mocker.patch("random.randint", return_value=1)  # forzamos random a devolver 1
+    g = gestor()
+    g.turno()  # turno actual pasa de 1 a 0 (porque hay 2 jugadores)
+    assert g.turno_actual == 0
