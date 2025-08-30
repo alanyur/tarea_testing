@@ -49,4 +49,7 @@ class arbitro:
             jugadores[k].dados.pop()
 
     def validar_calzar(self,cantidad,jugadores,k):
-        pass
+        if cantidad>=contador_pintas.contador().dados_totales(jugadores)/2 or len(jugadores(k).dados) == 1:
+            return True
+        else:
+            return False
