@@ -17,3 +17,5 @@ class gestor:
         self.turno_actual = (self.turno_actual + 1) % len(self.jugadores)
         print(f"Turno del jugador {self.turno_actual + 1}")
 
+    def un_dado(self):
+        pass
