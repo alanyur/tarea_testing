@@ -12,4 +12,9 @@ class Contador:
                 else:
                     cantidad_dados[dado - 1] += 1
         return cantidad_dados
+    def dados_totales(self,jugadores):
+        total=0
+        for j in range(len(jugadores)):
+            total+=len(jugadores[j].dados)
+        return total
 

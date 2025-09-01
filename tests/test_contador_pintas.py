@@ -1,6 +1,6 @@
 import pytest
 
-from src.juego.contador import Contador
+from src.juego.contador_pintas import Contador
 #from src.juego.cacho import Cacho
 from unittest.mock import Mock
 
@@ -28,5 +28,3 @@ def test_contar_dados_por_pinta_ronda_especial():
     assert resultado[3] == 4
     assert resultado[4] == 3  
     assert resultado[5] == 1  
-
-
