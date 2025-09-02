@@ -1,6 +1,6 @@
 import pytest
-from cacho import Cacho
-from dice import Dice
+from src.juego.cacho import Cacho
+from src.juego.dice import Dice
 
 def test_cacho_creacion_dados():
     # Confirmar si existen las 5 instancias de dados al iniciar el juego con los cachos

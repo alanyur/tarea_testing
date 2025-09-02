@@ -1,4 +1,5 @@
 from src.juego.dice import Dice
+
 class Cacho:
     dados = [0]*5
     def __init__(self):

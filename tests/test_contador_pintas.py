@@ -1,7 +1,7 @@
 import pytest
 
 from src.juego.contador_pintas import Contador
-#from src.juego.cacho import Cacho
+from src.juego.cacho import Cacho
 from unittest.mock import Mock
 
 def test_contar_dados_por_pinta_ronda_normal():
