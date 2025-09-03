@@ -19,7 +19,7 @@ class arbitro:
             return True ###dudaste bien
         else:
             return False ###dudaste mal
-        
+
 
     def calzar(self,cantidad,pinta,jugadores):
         pintas={
