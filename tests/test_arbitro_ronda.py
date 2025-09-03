@@ -69,6 +69,30 @@ def test_pasar_dado():
     c_dados = len(jugadores[0].dados)
     assert c_dados ==  4
 
+def test_pasar_dado2():
+    jugadores = [cacho.Cacho() for _ in range(4)]
+    a=arbitro()
+    a.jugadores=jugadores
+    a.pasar_dado("dudar",True,jugadores,1)
+    c_dados = len(jugadores[0].dados)
+    assert c_dados ==  4
+
+def test_pasar_dado3():
+    jugadores = [cacho.Cacho() for _ in range(4)]
+    a=arbitro()
+    a.jugadores=jugadores
+    a.pasar_dado("dudar",False,jugadores,2)
+    c_dados = len(jugadores[2].dados)
+    assert c_dados ==  4
+
+def test_pasar_dado4():
+    jugadores = [cacho.Cacho() for _ in range(4)]
+    a=arbitro()
+    a.jugadores=jugadores
+    a.pasar_dado("calzar",True,jugadores,3)
+    c_dados = len(jugadores[3].dados)
+    assert c_dados ==  4
+
 def test_validar_calzar():
     jugadores = [cacho.Cacho() for _ in range(4)]
     a=arbitro()
