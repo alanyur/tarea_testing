@@ -30,3 +30,11 @@ def test_un_dado(mocker):
     g.jugadores[1].dados = [3]  # forzamos que el jugador 1 tenga un solo dado
     resultado = g.un_dado()  # turno actual es 1
     assert resultado is True
+
+def test_no_un_dado(mocker):
+    mocker.patch("builtins.input", return_value="2")
+    mocker.patch("random.randint", return_value=1)  # forzamos random a devolver 1
+    g = gestor()
+    g.jugadores[1].dados = [3, 5]  # forzamos que el jugador 1 tenga dos dados
+    resultado = g.un_dado()  # turno actual es 1
+    assert resultado is False
