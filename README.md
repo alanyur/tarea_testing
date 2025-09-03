@@ -11,5 +11,8 @@
 ## Instalar dependencias
     pip install pytest pytest-mock pytest-cov
 
+## Para verificar la cobertura de los test
+    pytest --cov=src --cov-report=term-missing
+
 ## Para correr el test de integración (que comprueba la implementación de todos los archivos)
     python3 -m pytest tests/test_integración.py::test_integracion_juego_completo_duda_incorrecta -v
