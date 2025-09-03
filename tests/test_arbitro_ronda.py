@@ -99,3 +99,10 @@ def test_validar_calzar():
     a.jugadores=jugadores
     resultado = a.validar_calzar(10,jugadores,0)
     assert resultado is True
+
+def test_validar_calzar_falso():
+    jugadores = [cacho.Cacho() for _ in range(4)]
+    a=arbitro()
+    a.jugadores=jugadores
+    resultado = a.validar_calzar(5,jugadores,0)
+    assert resultado is False
